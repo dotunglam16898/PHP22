@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form action="add_process.php" method="POST" role="form">
+            <legend>ZENT GROUP-PHP-Thực hành về gửi dữ liệu dùng POST</legend>
+            
+            <div class="form-group">
+                <label for="">Mã sinh viên</label>
+                <input type="text" class="form-control" id="" placeholder="Nhập mã sinh viên" name="msv">
+            </div>
+            
+            <div class="form-group">
+                <label for="">Họ và tên</label>
+                <input type="text" class="form-control" id="" placeholder="Nhập vào họ và tên" name="user">
+            </div>  
+
+            <div class="form-group">
+                <label for="">Số điện thoại</label>
+                <input type="text" class="form-control" id="" placeholder="Nhập vào SĐT" name="phone">
+            </div>  
+
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" id="" placeholder="Nhập vào email" name="email">
+            </div>  
+
+            <label for="">Giói tính</label>
+            <div class="form-group ">
+
+             <input type="radio" class="" id="" placeholder="Nam" name="gender" value="Nam"> <label>Male</label>
+             <input type="radio" class="" id="" placeholder="" name="gender" value="Nữ">  <label>Female</label>
+             <input type="radio" class="" id="" placeholder="" name="gender" value="khác">  <label>other</label>
+
+            </div>  
+
+             <div class="form-group">
+                <label for="">Địa chỉ</label>
+                <input type="text" class="form-control" id="" placeholder="Nhập vào địa chỉ" name="address">
+            </div>  
+
+
+
+
+
+         <button type="submit" class="btn btn-primary">Login</button>
+     </form>
+ </div>
+</body>
+</html>
