@@ -1,0 +1,325 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Classic - Lâm Đỗ</title>
+<!--
+Classic Template
+http://www.templatemo.com/tm-488-classic
+-->
+<!-- load stylesheets -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+<link rel="stylesheet" href="views/frontend/css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+<link rel="stylesheet" href="views/frontend/css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+      <link rel="stylesheet" href="views/frontend/css/animate.css">
+  </head>
+
+  <body>
+
+    <div class="tm-header">
+        <div class="container-fluid">
+            <div class="tm-header-inner">
+                <a href="/PROJECT%201/index.php?mod=home&act=index" class="navbar-brand tm-site-name">Classic</a>
+
+                <!-- navbar -->
+                <nav class="navbar tm-main-nav">
+
+                    <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
+                        &#9776;
+                    </button>
+
+                    <div class="collapse navbar-toggleable-sm" id="tmNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item active">
+                                <a href="/PROJECT%201/index.php?mod=home&act=index" class="nav-link">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/PROJECT%201/index.php?mod=home&act=vlog" class="nav-link">BLOG</a>
+                            </li>
+                           
+                            <li class="nav-item">
+                                <a href="/PROJECT%201/index.php?mod=home&act=contact" class="nav-link">LIÊN HỆ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/PROJECT%201/index.php?mod=auth&act=login" class="nav-link">ĐĂNG NHẬP</a>
+                            </li>
+                        </ul>                        
+                    </div>
+
+                </nav>  
+
+            </div>                                  
+        </div>            
+    </div>
+
+    <div class="tm-home-img-container">
+        <img src="views/frontend/img/tm-home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
+    </div>
+
+    <section class="tm-section">
+        <div class="container-fluid">
+            <div class="row wow slideInLeft " data-wow-duration="2s" >
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
+                    <h2 class="tm-gold-text tm-title " >Lời giới thiệu</h2>
+                    <p class="tm-subtitle">Đây là blog cá nhân của Đỗ Tùng Lâm </p>
+                </div>
+            </div>
+            
+
+            <?php foreach($posts as $post) { ?>
+                <div class="row">
+
+                   <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow bounceInRight" data-wow-duration= '2s'>
+
+                    <div class="tm-content-box">
+
+
+                        <img src="Upload<?php echo $post['thumbnail'] ?>" alt="Image" class="tm-margin-b-20 img-fluid " >
+
+                        <h4 class="tm-margin-b-20 tm-gold-text"><?php echo $post['title'] ?>
+
+                    </p>
+                    <a href="/PROJECT%201/views/frontend/detail_blog.php?id=<?php echo $post['id']?>&<?php echo $post['slug']?>" class="tm-btn text-uppercase">Chi tiết</a> 
+
+                </div>  
+
+
+            </div> <!-- row -->
+        <?php } ?>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 wow bounceInRight" data-wow-duration= '10s'>
+
+            <div class="tm-content-box">
+               <!--  <img src="img/1587988098-553-ha-noi-quy-dinh-gio-mo-cua-doi-voi-cac-cua-hang-khong-thiet-yeu-94516323_10212688361522532_4057139147045863424_o-1587987254-width2048height1341.jpg" alt="Image" class="tm-margin-b-20 img-fluid"> -->
+               <h4 class="tm-margin-b-20 tm-gold-text"></p>
+                   <!--  <a href="/PROJECT%201/views/frontend/detail_blog.php?id=19" class="tm-btn text-uppercase"></a> -->    
+               </div>  
+
+           </div>
+
+           <div class="row tm-margin-t-big">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 wow bounceInDown" data-wow-duration= '4s' style="margin-top: 97px">
+                <div class="tm-2-col-left" style="margin-left: 48px">
+
+                    <h3 class="tm-gold-text tm-title">Cuốn sách yêu thích</h3>
+                    <p class="tm-margin-b-30">Cuộc sống không giới hạn</p>
+                    <img src="views/frontend/img/review-sach-cuoc-song-khong-gioi-han-1-768x432.jpg" alt="Image" class="tm-margin-b-40 img-fluid">
+                    <p>
+                        Cuộc sống không giới hạn – Bạn đã nghe đến cụm từ này ở đâu rồi nhỉ? Đó có phải là từ dùng để chỉ những nghị lực phi thường trong cuộc sống này không? Đúng vậy đấy, nhưng đó còn là tựa của một cuốn sách rất hay của Nick Vujicic.
+                    </p>
+                    <p></p>
+                    <p class="m-b-2"> Trong cuộc sống mỗi người đều có một hoàn cảnh khác nhau. Tự mỗi người đặt ra cho mình giới hạn từ khả năng của bản thân. Ước mơ để rồi chinh phục điều mình mong muốn. Tất nhiên là không phải ai cũng chạm đến được điều đó.
+
+                        Nhưng mà Cuộc sống không giới hạn sẽ không phải là công cụ giúp bạn làm việc đó, mà đó chính là niềm tin, nguồn năng lượng giúp bạn thêm sức mạnh. Bạn sẽ thấy được, cuộc sống chẳng có một giới hạn nào cả. Dù bạn ở trong hoàn cảnh ra sao, quan trọng là bạn có muốn đạt đến điểm vô cực của cuộc đời mình hay không mà thôi.
+                    </p>
+                    <a href="/PROJECT%201/views/frontend/detail_blog.php?id=20" class="tm-btn text-uppercase">Đọc thêm</a>
+
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+
+                <div class="tm-2-col-right">
+
+                    <div class="tm-2-rows-md-swap">
+                        <div class="tm-overflow-auto row tm-2-rows-md-down-2" style="margin-top: 202px">
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+                                <h3 class="tm-gold-text tm-title">
+                                    Danh mục
+                                </h3>
+                                <nav>
+                                    <ul class="nav">
+                                        <ul class="nav">
+                                            <?php foreach ($categories as $category) { ?>
+                                                <li><a href="/PROJECT%201/views/frontend/category_blog.php?mod=home&act=showCategory&id=<?php echo $category['id']?>" class="tm-text-link"><?php echo $category['name'] ?></a></li>
+                                            <?php } ?>
+
+
+                                        </ul>
+
+                                    </ul>
+                                </nav>    
+                            </div> <!-- col -->
+
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-xs-m-t">
+                                <h3 class="tm-gold-text tm-title">
+                                    Liên kết khác
+                                </h3>
+                                <nav>
+                                    <ul class="nav">
+                                        <li><a href=" /PROJECT%201/?mod=home&act=viewPost" class="tm-text-link">Bài viết xem nhiều</a></li>
+                                        
+                                        <li><a href="/PROJECT%201/?mod=home&act=newPost" class="tm-text-link">Bài viết mới nhất</a></li>
+                                        <li><a href="https://getbootstrap.com/" class="tm-text-link">Link tham khảo</a></li>
+                                        <li><a href="http://zent.edu.vn/courses/lap-trinh-php-mysql" class="tm-text-link">Khóa học của tôi</a></li>
+                                        <li><a href="https://github.com/dotunglam16898/LamDo2/tree/master/project" class="tm-text-link">Project khác </a></li>
+                                    </ul>
+                                </nav>    
+                            </div> <!-- col -->
+                        </div>                        
+
+                        <div class="row tm-2-rows-md-down-1 tm-margin-t-mid">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <h3 class="tm-gold-text tm-title tm-margin-b-30">Bài viết liên quan</h3>
+                                <div class="media tm-related-post wow bounceInUp" data-wow-duration="3s">
+                                  <div class="media-left media-middle">
+                                    <a href="#">
+                                      <img class="media-object" src="views/frontend/img/tm-img-240x120-1.jpg" alt="Generic placeholder image">
+                                  </a>
+                              </div>
+                              <div class="media-body " >
+                                <a href="/PROJECT%201/views/frontend/detail_blog.php?id=21"><h4 class="media-heading tm-gold-text tm-margin-b-15">Vì sao iPhone không thể sạc quá 80%, cách khắc phục</h4></a>
+                                <p class="tm-small-font tm-media-description" style="margin-right: 37px">Khi sạc pin, bạn có thể thấy iPhone chỉ đạt đến mức 80% hoặc thấp hơn 100%. Nguyên nhân ...</p>
+                            </div>
+                        </div>
+                        <div class="media tm-related-post wow bounceInUp" data-wow-duration="3s">
+                          <div class="media-left media-middle">
+                            <a href="#">
+                              <img class="media-object" src="views/frontend/img/tm-img-240x120-2.jpg" alt="Generic placeholder image">
+                          </a>
+                      </div>
+                      <div class="media-body">
+                        <a href="/PROJECT%201/views/frontend/detail_blog.php?id=22"><h4 class="media-heading tm-gold-text tm-margin-b-15" style="margin-right: 42px">Làm sao để trẻ có thể vừa học vừa  chơi ngay tại nhà</h4></a>
+                        <p class="tm-small-font tm-media-description" style="margin-right: 51px">Chỉ cần vài thao tác truy cập các ứng dụng TV, bố mẹ có thể cùng các bé vừa học vừa chơi một cách vô cùng trực quan, sinh động. Học toán, học tiếng Anh, khám phá thế giới khoa học…</p>
+                    </div>
+                </div>
+                <div class="media tm-related-post wow bounceInUp" data-wow-duration="3s">
+                  <div class="media-left media-middle">
+                    <a href="#">
+                      <img class="media-object" src="views/frontend/img/tm-img-240x120-3.jpg" alt="Generic placeholder image">
+                  </a>
+              </div>
+              <div class="media-body">
+                <a href="/PROJECT%201/views/frontend/detail_blog.php?id=23"><h4 class="media-heading tm-gold-text tm-margin-b-15" style="margin-right: 22px">Làm thế nào để giải quyết những vấn đề chụp ảnh này ban đêm: mờ nhoè,  thiếu sáng, vỡ ảnh...? </h4></a>
+                <p class="tm-small-font tm-media-description">Chụp được tấm ảnh về đêm đẹp chuẩn chỉnh tưởng dễ nhưng lại khó vô cùng, khi các vấn đề nan giải luôn còn đó làm cho tác phẩm nhận được thường khiến chúng ta tụt "mood"...</p>
+            </div>
+        </div>
+    </div>
+</div>    
+</div>
+
+</div>
+
+</div>
+</div> <!-- row -->
+
+</div>
+</section>
+
+<footer class="tm-footer">
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                <div class="tm-footer-content-box">
+                    <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Giới thiệu bản thân</h3>
+                    <div class="tm-gray-bg">
+                        <p>Họ và tên : Đỗ Tùng Lâm </p>
+                        <p>Ngày sinh: 16/8/1998</p>
+                        <p>Giới tính: Nam</p>
+                        <p>Sở thích: xem phim,nghe nhạc,chơi game,đá bóng</p>
+                        <p>Học tại trường Đại học kinh tế kỹ thuật công nghiệp</p>
+                        <p>Link facebook: https://www.facebook.com/profile.php?id=100026430622330</p>
+                    </div>    
+                </div>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                <div class="tm-footer-content-box tm-footer-links-container">
+
+                    <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Liên kết nhanh</h3>
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="?mod=home&act=index" class="tm-footer-link">Trang chủ</li>
+                            <li><a href="?mod=home&act=vlog" class="tm-footer-link">Blog</a></li>
+                           
+                            <li><a href="?mod=home&act=contact" class="tm-footer-link">Liên hệ</a></li>
+                            <li><a href="?mod=auth&act=login" class="tm-footer-link">Đăng nhập</a></li>
+                            <!-- <li><a href="#" class="tm-footer-link">Text Link Color #CCCC66</a></li> -->
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+                    <!-- Add the extra clearfix for only the required viewport 
+                        http://stackoverflow.com/questions/24590222/bootstrap-3-grid-with-different-height-in-each-item-is-it-solvable-using-only
+                    -->
+                    <div class="clearfix hidden-lg-up"></div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-footer-content-box">
+
+                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Giới thiệu về ZENT</h3>
+                            <p class="tm-margin-b-30">ZENT EDUCATION được thành lập với triết lý “Không cứ phải là thần đồng, không cứ phải là giàu có chỉ cần có phương pháp giáo dục đúng đắn, tích cực mọi đứa trẻ đều sẽ trở thành nhân tài” được viết trong cuốn sách nổi tiếng “Em phải đến Harvard học kinh tế”. Với mục tiêu mọi sinh viên, nhất là sinh chuyên nhóm ngành CNTT, Toán Tin, Điện tử viễn thông dù học “trường top” hay “trường thường” đều có cơ hội việc làm rộng mở, Zent đã được thành lập với sứ mệnh đưa phương pháp giáo dục “Project based Learning” và “Learning by Doing” vào giảng dạy để giúp các em sinh viên có thể học một cách thực tế nhất qua các project.</p><hr class="tm-margin-b-30">
+                            
+                            <a href="http://zent.edu.vn/" class="tm-btn tm-btn-gray text-uppercase">Read More</a>
+
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+
+                        <div class="tm-footer-content-box">
+
+                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Ảnh đẹp</h3>
+                            <div class="tm-margin-b-30">
+                                <img src="views/frontend/img/tm-img-100x100-1.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="views/frontend/img/tm-img-100x100-2.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="views/frontend/img/tm-img-100x100-3.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="views/frontend/img/tm-img-100x100-4.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="views/frontend/img/tm-img-100x100-5.jpg" alt="Image" class="tm-footer-thumbnail">
+                                <img src="views/frontend/img/tm-img-100x100-6.jpg" alt="Image" class="tm-footer-thumbnail">
+                            </div>
+                            <p class="tm-margin-b-20">Một số bức ảnh đẹp chụp về phong cảnh các nước</p>
+                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Browse</a>
+
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 tm-copyright-col">
+                        <p class="tm-copyright-text">Copyright 2020 Lâm Đỗ</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- <div class="scrollup">
+            <a href="#"><i class="fa fa-chevron-up"></i></a>
+        </div> -->
+
+        <!-- load JS files -->
+        <script src="views/frontend/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h --> 
+        <script src="views/frontend/js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
+        <script src="views/frontend/js/wow.min.js"></script>
+        <script>
+          new WOW().init();
+      </script>
+  </body>
+  </html>
